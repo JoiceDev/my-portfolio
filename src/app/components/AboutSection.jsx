@@ -8,13 +8,16 @@ const TAB_DATA = [
     title: "Skills",
     id: "skills",
     content: (
-      <ul className="list-disc pl-2">
+      <ul className="pl-2">
         <li>Node.js</li>
         <li>Express</li>
-        <li>PostgreSQL</li>
         <li>Sequelize</li>
-        <li>JavaScript</li>
         <li>React</li>
+        <li>JavaScript/TypeScript</li>
+        <li>Java</li>
+        <li>Spring Boot</li>
+        <li>Hibernate</li>
+        <li>SQL and NoSQL</li>
       </ul>
     ),
   },
@@ -22,9 +25,8 @@ const TAB_DATA = [
     title: "Education",
     id: "education",
     content: (
-      <ul className="list-disc pl-2">
-        <li>Fullstack Academy of Code</li>
-        <li>University of California, Santa Cruz</li>
+      <ul className="pl-2">
+        <li>Fullstack Development EBAC</li>
       </ul>
     ),
   },
@@ -32,9 +34,14 @@ const TAB_DATA = [
     title: "Certifications",
     id: "certifications",
     content: (
-      <ul className="list-disc pl-2">
-        <li>AWS Cloud Practitioner</li>
-        <li>Google Professional Cloud Developer</li>
+      <ul className="pl-2">
+        <li>Advanced Node.js</li>
+        <li>Fundamentals of Next.js</li>
+        <li>Advanced Mobile Programming</li>
+        <li>Computational Thinking</li>
+        <li>Advanced JavaScript</li>
+        <li>Artificial Intelligence from A to Z</li>
+        <li>IT from Zero to Pro </li>
       </ul>
     ),
   },
@@ -51,20 +58,23 @@ const AboutSection = () => {
   };
 
   return (
-    <section className="text-white" id="about">
-      <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        <Image src="/images/about-image.png" width={500} height={500} />
-        <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
+    <section className="text-white flex justify-center items-center min-h-screen py-8 px-4" id="about">
+      <div className="max-w-4xl w-full">
+        <div className="mt-4 md:mt-0 text-center flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
-          <p className="text-base lg:text-lg">
-            I am a full stack web developer with a passion for creating
-            interactive and responsive web applications. I have experience
-            working with JavaScript, React, Redux, Node.js, Express, PostgreSQL,
-            Sequelize, HTML, CSS, and Git. I am a quick learner and I am always
-            looking to expand my knowledge and skill set. I am a team player and
-            I am excited to work with others to create amazing applications.
+          <p className="text-base lg:text-lg text-center">
+            I am a Full Stack Developer committed to building modern, responsive applications that 
+            prioritize an exceptional user experience. My goal is to deliver scalable, secure solutions 
+            aligned with client needs, always combining technology with a strong focus on the user.
+
+            On the frontend, I work with modern frameworks like Vue.js and React to ensure intuitive, 
+            responsive, and high-performance interfaces.
+
+            For the backend, I develop well-structured APIs and microservices using Node.js and Java, 
+            integrating both relational and NoSQL databases. I have experience with JPA and ORMs, which 
+            help maintain data consistency and security, in addition to applying good practices in event-driven architecture.
           </p>
-          <div className="flex flex-row justify-start mt-8">
+          <div className="flex flex-row justify-center mt-8">
             <TabButton
               selectTab={() => handleTabChange("skills")}
               active={tab === "skills"}
