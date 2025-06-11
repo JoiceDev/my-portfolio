@@ -52,7 +52,7 @@ const projectsData = [
     id: 6,
     title: "Java Swing Client Registry",
     description: "Customer registration system with graphical user interface, developed in Java using Java Swing in the NetBeans Apache IDE. The application allows users to save, edit, and delete customer records, applying object-oriented programming concepts, event handling, and data manipulation for desktop application development.",
-    image: "/images/projects/6.png",
+    image: "/images/projects/java.png",
     gitUrl: "https://github.com/JoiceDev/cadastro-cliente-java",
     previewUrl: "null",
   },
